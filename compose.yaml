@@ -1,0 +1,10 @@
+services:
+  livereload:
+    build: 
+      context: ./
+      args:
+        BROWSER: firefox
+    volumes:
+      - ./:/usr/src/app:ro
+    ports:
+      - "8000:8000"
